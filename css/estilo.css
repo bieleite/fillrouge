@@ -1,0 +1,588 @@
+body{
+	font-family: 'Alice', serif;
+	color: #333;
+}
+a:link, a:active, a:visited{
+	color: gold;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+/* grid 960px */
+.linha{
+    margin: 0 auto;
+    overflow: auto;
+
+}
+.imgheader{
+    align-items: center;
+}
+.coluna{
+    padding: 0;
+    float: left;
+}
+.col1{
+    width: 6.25%;
+}
+.col2{
+    width: 14.58333333%;
+}
+.col3{
+    width: 22.916666%;
+}
+.col4{
+    width: 31.25%;
+}
+.col5{
+    width: 39.58333333%;
+}
+.col6{
+    width: 47.9166666%;
+}
+.col7{
+    width: 56.25%;
+}
+.col8{
+    width: 64.583333%;
+}
+.col9{
+    width: 72.9166666%;
+}
+.col10{
+    width: 81.25%;
+}
+.col11{
+    width: 89.5833333%;
+}
+.col12{
+    width: 97.91666666%;
+}
+.col13{
+    width: 100%;
+}
+
+/* estilos reutilisaveis */
+.sem-padding{
+	padding: 0 !important;
+}
+.sem-margin{
+	margin: 0 !important;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 500;
+	margin: 1em 0 1em 0;
+}
+ul li, ol li{
+	margin-bottom: 0;
+}
+ul.inline li, ol.inline li{
+	display: inline;
+	margin-right: 1em;
+}
+ul.inline li:last-child, ol.inline li:last-child{
+	margin-right: 1em;
+}
+ul.sem-marcador, ol.sem-marcador{
+	list-style: none;
+}
+a.botao, input.botao{
+	background: red;
+	padding: 5em 10em;
+	border-radius: 3em;
+	color: #ebebeb;
+	cursor: pointer;
+	margin: 1em 0;
+	display: inline-block;
+	border: none;
+}
+a.botao:hover, input.botao:hover{
+	background: black;
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+/* layout do site*/
+.header{
+	background: linear-gradient(grey, white);
+	max-height: 40em;
+}
+h1.logo{
+
+}
+.conteudo-extra{
+	background: linear-gradient(white,#f1f2ea);
+}
+.footer{
+	background: linear-gradient(#f1f2ea,black);
+	color: #ebebeb;
+	padding: 2em 0;
+	text-align: center;
+	font-weight: 100;
+}
+.menu{
+	text-transform: uppercase;
+	text-align: right;
+	margin-top: 0;
+}
+.menu li a{
+	padding: 0.5em 1em;
+	border-radius: 3em;
+}
+.menu li a:hover{
+	text-decoration: none;
+	background: #1f3c58;
+	color: #ebebeb;
+}
+.menutopo{
+	text-transform: uppercase;
+	text-align: right;
+	margin-bottom: 0;
+	height: 2.9em;
+}
+.menutopo li a{
+	padding: 0.2em 0.5em;
+	border-radius: 0.2em;
+	background: rgba(220,220,220,0.3);
+	color: #B8860B;
+}
+.menutopo li a:hover{
+	text-decoration: none;
+	background: #1f3c58;
+	color: #B8860B;
+}
+ul.noticias li{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 2em;
+}
+ul.noticias li img{
+	width: 4em;
+	height: auto;
+	margin-right: 1em;
+	float: left;
+}
+ul.noticias li h4{
+	margin: -2em 0 1em 0;
+	font-weight: 500;
+}
+ul.noticias li p{
+	margin: 1em 0;
+	font-weight: 300;
+}
+ul.noticias li p a{
+	font-weight: 500;
+}
+.contato label{
+	display: block;
+	font-size: 1em;
+	font-weight: 300;
+}
+.contato input, .contato textarea{
+	display: block;
+	margin-bottom: 1em;
+	padding: 0.5em 2%;
+	width: 96%;
+}
+.contato textarea{
+	height: 10em;
+}
+.contato input.botao{
+	width: auto;
+}
+.center{
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+  position: static;
+}
+.centerlin{
+	/*display: flex;*/
+  flex-direction: line;
+  justify-content: center;
+  resize: vertical;
+  /*overflow: auto;*/
+}
+.achetez{
+	position: fixed;
+  	top: -5em;
+  	right: -30em;
+  	background: #B8860B;
+	color: #ebebeb;
+	padding: 0.2em 0.5em;
+	border-radius: 0.2em;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.achetez:hover{
+	text-decoration: none;
+	background: #1f3c58;
+	color: #ebebeb;
+}
+.imgcen{
+	width: 100%
+}
+.sidebar{
+	background: none !important;
+}
+.topo{
+    background-image:url(https://centralparkzoo.com/assets/heroes/home/centralparkzoo-88276dda4712cdf83354ceb7ba7bb20a.jpg)!important;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+#menutopo{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.75), transparent) !important;
+    background-image: linear-gradient(rgba(0,0,0,0.75), transparent);
+    /*font-size: 1.8em;*/
+
+}
+#menubaix{
+    background-image: -webkit-linear-gradient( transparent, black) !important;
+    background-image: linear-gradient(transparent, black);
+    font-size: 1.2em;
+
+} 
+/*page login*/
+
+.headerlogin {
+	width: 45em;
+	margin: 7% 25%;
+	color: black;
+	background: white;
+	text-align: center;
+	border: 0.1em solid #B0C4DE;
+	border-radius: 1em 1em 1em 1em;
+	padding: 2em;
+	font-size: 1em;
+	background: #F8F8FF;
+}
+form, .contentlogin {
+	width: 40em;
+	margin: 1em auto;
+	padding: 1em;
+	border: 0.1em solid #B0C4DE;
+	background: white;
+	border-radius: 1em 1em 1em 1em;
+}
+.input-grouplogin {
+	margin: 1em 0em 1em 0em;
+}
+
+.input-grouplogin label {
+	display: block;
+	font-size: 1em;
+	font-weight: 300;
+}
+.input-grouplogin input {
+	height: 1em;
+	width: 5em;
+	padding: 1em 10em;
+	font-size: 1em;
+	border-radius: 1em;
+	border: 0.1em solid gray;
+}
+.btnlogin {
+	padding: 1em;
+	font-size: 1em;
+	color: blue;
+	background: #5F9EA0;
+	border: 0.1em solid;
+	border-radius: 0.1em;
+}
+.errorlogin {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.successlogin {
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+    body {
+        font-size:50%;
+        width: 100%;
+        background: black;
+    }   
+    body{
+	font-family: 'Alice', serif;
+	color: #333;
+	}
+	a:link, a:active, a:visited{
+		color: whitesmoke;
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+	@media (max-width: 720px) {
+          .grid{display: none;}
+          .btn-toggle{display: block;}
+          .img{display:none ;}
+          .conteudo-extra {display: none;}
+          .achetez{display: none;}
+    } 
+	/* grid 960px */
+	.linha{
+	    margin: 0 auto;
+	    overflow: auto;
+
+	}
+	.imgheader{
+	    align-items: center;
+	}
+	.coluna{
+
+	    float: left;
+	}
+	[class*="col"] {
+             width: 100%;
+        }
+
+	/* estilos reutilisaveis */
+	.sem-padding{
+		padding: 0 !important;
+	}
+	.sem-margin{
+		margin: 0 !important;
+	}
+	/*h1, h2, h3, h4, h5, h6{
+		font-weight: 500;
+		margin: 1em 0 1em 0;
+	}
+	ul li, ol li{
+		margin-bottom: 1em;
+	}
+	ul.inline li, ol.inline li{
+		display: inline;
+		margin-right: 0;
+	}
+	ul.inline li:last-child, ol.inline li:last-child{
+		margin-right: 0;
+	}*/
+	ul.sem-marcador, ol.sem-marcador{
+		list-style: none;
+	}
+	a.botao, input.botao{
+		background: red;
+		padding: 5em 10em;
+		border-radius: 3em;
+		color: #ebebeb;
+		cursor: pointer;
+		margin: 1em 0;
+		display: inline-block;
+		border: none;
+	}
+	a.botao:hover, input.botao:hover{
+		background: black;
+		text-decoration: none;
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+	/* layout do site*/
+	.header{
+		background: linear-gradient(grey, white);
+		max-height: 40em;
+	}
+	h1.logo{
+
+	}
+	.conteudo-extra{
+		background: linear-gradient(white,#f1f2ea);
+	}
+	.footer{
+		background: linear-gradient(#f1f2ea,black);
+		color: #ebebeb;
+		padding: 2em 0;
+		text-align: center;
+		font-weight: 100;
+	}
+	.menu{
+		text-transform: uppercase;
+		text-align: right;
+		margin-top: 0;
+	}
+	.menu li a{
+		padding: 0.5em 1em;
+		border-radius: 3em;
+	}
+	.menu li a:hover{
+		text-decoration: none;
+		background: #1f3c58;
+		color: #ebebeb;
+	}
+	.menutopo{
+		text-transform: uppercase;
+		text-align: right;
+		margin-bottom: 0;
+	}
+	.menutopo li a{
+		padding: 0.2em 0.5em;
+		border-radius: 0.8em;
+	}
+	.menutopo li a:hover{
+		text-decoration: none;
+		background: #1f3c58;
+		color: #ebebeb;
+	}
+	ul.noticias li{
+		clear: both;
+		display: block;
+		overflow: hidden;
+		margin-bottom: 2em;
+	}
+	ul.noticias li img{
+		width: 4em;
+		height: auto;
+		margin-right: 1em;
+		float: left;
+	}
+	ul.noticias li h4{
+		margin: -2em 0 1em 0;
+		font-weight: 500;
+	}
+	ul.noticias li p{
+		margin: 1em 0;
+		font-weight: 300;
+	}
+	ul.noticias li p a{
+		font-weight: 500;
+	}
+	.contato label{
+		display: block;
+		font-size: 1em;
+		font-weight: 300;
+	}
+	.contato input, .contato textarea{
+		display: block;
+		margin-bottom: 1em;
+		padding: 0.5em 2%;
+		width: 96%;
+	}
+	.contato textarea{
+		height: 10em;
+	}
+	.contato input.botao{
+		width: auto;
+	}
+	.center{
+		display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  resize: vertical;
+	  overflow: auto;
+	}/*
+	.centerlin{
+		display: flex;
+	  flex-direction: line;
+	  justify-content: center;
+	  resize: vertical;
+	  overflow: auto;
+	}*/
+	.imgcen{
+		width: 100%
+	}
+	.sidebar{
+		background: none !important;
+	}/*
+	.topo{
+		    background-image:url(https://centralparkzoo.com/assets/heroes/home/centralparkzoo-88276dda4712cdf83354ceb7ba7bb20a.jpg);
+		    background-repeat: no-repeat;
+	    background-position: 50%;
+	    background-size: cover;
+	}*/
+	#menutopo{
+	    background-image: -webkit-linear-gradient(rgba(0,0,0,0.75), transparent) !important;
+	    background-image: linear-gradient(rgba(0,0,0,0.75), transparent);
+	    font-size: 1.8em;
+
+	}
+	#menubaix{
+	    background-image: -webkit-linear-gradient( transparent, black) !important;
+	    background-image: linear-gradient(transparent, black);
+	    font-size: 1.5em;
+
+	} 
+	/*page login*/
+
+.headerlogin {
+	width: 30%;
+	margin: 50px auto 0px;
+	color: white;
+	background: #5F9EA0;
+	text-align: center;
+	border: 1px solid #B0C4DE;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;
+	margin: 90px;
+	padding: 90px;
+	font-size: 120%;
+	background: #F8F8FF;
+}
+form, .contentlogin {
+	width: 30%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #B0C4DE;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+.input-grouplogin {
+	margin: 10px 0px 10px 0px;
+}
+
+.input-grouplogin label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+}
+.input-grouplogin input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.btnlogin {
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	background: #5F9EA0;
+	border: none;
+	border-radius: 5px;
+}
+.errorlogin {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.successlogin {
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}
+}
